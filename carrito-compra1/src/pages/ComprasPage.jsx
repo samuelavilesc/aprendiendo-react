@@ -11,12 +11,6 @@ export const ComprasPage = () => {
     const handleEliminarProducto = (id) => {
         eliminarProducto(id)
     }
-    const handleAumentarCantidad = (id) => {
-        aumentarCantidad(id)
-    }
-    const handleDisminuirCantidad = (id) => {
-        disminuirCantidad(id)
-    }
 
     return (
         <>
@@ -31,8 +25,6 @@ export const ComprasPage = () => {
                         precio={producto.price}
                         handleAgregarProducto={() => handleAgregarProducto(producto)}
                         handleEliminarProducto={() => handleEliminarProducto(producto.id)}
-                        handleAumentarCantidad={() => handleAumentarCantidad(producto.id)}
-                        handleDisminuirCantidad={() => handleDisminuirCantidad(producto.id)}
                     />
                 ))}
         </>
